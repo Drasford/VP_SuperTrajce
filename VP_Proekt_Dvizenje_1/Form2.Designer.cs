@@ -60,17 +60,10 @@
             this.thirdLvlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sTARTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -92,17 +85,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.gameover)).BeginInit();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -320,7 +306,7 @@
             this.sTARTToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(688, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(670, 24);
             this.menuStrip2.TabIndex = 35;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -379,66 +365,6 @@
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Tag = "coin";
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
-            this.pictureBox10.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.coin;
-            this.pictureBox10.Location = new System.Drawing.Point(1217, 294);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 37;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Tag = "coin";
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
-            this.pictureBox12.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.coin;
-            this.pictureBox12.Location = new System.Drawing.Point(1138, 294);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 38;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Tag = "coin";
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
-            this.pictureBox13.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.coin;
-            this.pictureBox13.Location = new System.Drawing.Point(1256, 350);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 39;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Tag = "coin";
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
-            this.pictureBox14.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.coin;
-            this.pictureBox14.Location = new System.Drawing.Point(1174, 350);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 40;
-            this.pictureBox14.TabStop = false;
-            this.pictureBox14.Tag = "coin";
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
-            this.pictureBox15.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.coin;
-            this.pictureBox15.Location = new System.Drawing.Point(1094, 350);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 41;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Tag = "coin";
-            // 
             // pictureBox16
             // 
             this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
@@ -489,30 +415,6 @@
             this.pictureBox19.TabStop = false;
             this.pictureBox19.Tag = "coin";
             // 
-            // pictureBox20
-            // 
-            this.pictureBox20.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
-            this.pictureBox20.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.coin;
-            this.pictureBox20.Location = new System.Drawing.Point(219, 492);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 46;
-            this.pictureBox20.TabStop = false;
-            this.pictureBox20.Tag = "coin";
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
-            this.pictureBox21.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.coin;
-            this.pictureBox21.Location = new System.Drawing.Point(256, 548);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 47;
-            this.pictureBox21.TabStop = false;
-            this.pictureBox21.Tag = "coin";
-            // 
             // pictureBox22
             // 
             this.pictureBox22.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
@@ -530,9 +432,9 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 457);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 480);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(688, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(670, 22);
             this.statusStrip1.TabIndex = 49;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -565,20 +467,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(688, 479);
+            this.ClientSize = new System.Drawing.Size(670, 502);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pictureBox22);
-            this.Controls.Add(this.pictureBox21);
-            this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox16);
-            this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.gameover);
@@ -618,17 +513,10 @@
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -670,17 +558,10 @@
         private System.Windows.Forms.ToolStripMenuItem thirdLvlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sTARTToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox20;
-        private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.PictureBox pictureBox22;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
