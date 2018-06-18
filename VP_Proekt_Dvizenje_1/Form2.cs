@@ -19,19 +19,22 @@ namespace VP_Proekt_Dvizenje_1
 
         int jumpSpeed = 10;
         int force = 8;
-        public int score2 { get; set; }
+        public static int score2 { get; set; }
+        public static int vkupenscore { get; set; }
 
         int playSpeed = 8;
         int backLeft = 8;
 
         Form1 form1 = new Form1();
 
+        int temp1 = Form1.score1;
+
         public Form2()
         {
             InitializeComponent();
            // gameTimer.Start();
             this.DoubleBuffered = true;
-            toolStripStatusLabel1.Text = string.Format("Coins: {0}", form1.score1 + score2);
+            toolStripStatusLabel1.Text = string.Format("Coins: {0}", temp1 + score2);
             toolStripStatusLabel2.Text = string.Format("Keys: 0");
          
 
@@ -169,7 +172,7 @@ namespace VP_Proekt_Dvizenje_1
         private void gameTimer_Tick(object sender, EventArgs e)
         {
 
-            toolStripStatusLabel1.Text = string.Format("Coins: {0}", form1.score1 + score2);
+            toolStripStatusLabel1.Text = string.Format("Coins: {0}", temp1 + score2);
             if (hasKey)
             {
                 toolStripStatusLabel2.Text = string.Format("Key: 1");
@@ -256,7 +259,7 @@ namespace VP_Proekt_Dvizenje_1
                     {
                         this.Controls.Remove(c);
                         gameover.Show();
-                        int vkupenscore = form1.getScore1();
+                         vkupenscore = temp1 + score2;
                         DialogResult result = MessageBox.Show(String.Format("Your overall score is: {0}", vkupenscore), "GAME OVER", MessageBoxButtons.RetryCancel);
                         if (result == DialogResult.Cancel)
                         {
@@ -298,7 +301,7 @@ namespace VP_Proekt_Dvizenje_1
                     timer6.Stop();
                     timer7.Stop();
                     timer8.Stop();
-                    int vkupenscore = form1.getScore1();
+                     vkupenscore = temp1 + score2;
                     DialogResult result = MessageBox.Show(String.Format("Your overall score is: {0}", vkupenscore), "GAME OVER", MessageBoxButtons.RetryCancel);
                     if (result == DialogResult.Cancel)
                     {
@@ -330,6 +333,22 @@ namespace VP_Proekt_Dvizenje_1
             if (e.KeyCode == Keys.Up && !jump)
             {
                 jump = true;
+            }
+            if (e.KeyCode == Keys.S)
+            {
+                gameTimer.Start();
+                timer1.Enabled = true;
+                timer5.Enabled = true;
+            }
+            if (e.KeyCode == Keys.Space && !jump)
+            {
+                jump = true;
+            }
+            if(e.KeyCode == Keys.P)
+            {
+                gameTimer.Stop();
+                timer1.Enabled = false;
+                timer5.Enabled = false;
             }
 
         }
@@ -376,6 +395,7 @@ namespace VP_Proekt_Dvizenje_1
         {
             gameTimer.Start();
             timer1.Enabled = true;
+            timer5.Enabled = true;
         }
 
         private void gameRulesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -387,6 +407,19 @@ namespace VP_Proekt_Dvizenje_1
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gameover_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pauseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (pauseToolStripMenuItem.Selected)
+            {
+                gameTimer.Stop();
+            }
         }
     }
     }

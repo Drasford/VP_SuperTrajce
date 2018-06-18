@@ -54,11 +54,8 @@
             this.gameover = new System.Windows.Forms.PictureBox();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.gameRulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.levelsChooserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.firstLvlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.secondLvlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thirdLvlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sTARTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pauseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
@@ -112,7 +109,6 @@
             // 
             // timer5
             // 
-            this.timer5.Enabled = true;
             this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
             // 
             // timer6
@@ -283,7 +279,7 @@
             this.Background.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.sky;
             this.Background.Location = new System.Drawing.Point(-30, 27);
             this.Background.Name = "Background";
-            this.Background.Size = new System.Drawing.Size(2000, 630);
+            this.Background.Size = new System.Drawing.Size(2500, 630);
             this.Background.TabIndex = 4;
             this.Background.TabStop = false;
             this.Background.Click += new System.EventHandler(this.Background_Click);
@@ -297,16 +293,18 @@
             this.gameover.Size = new System.Drawing.Size(716, 489);
             this.gameover.TabIndex = 31;
             this.gameover.TabStop = false;
+            this.gameover.Click += new System.EventHandler(this.gameover_Click);
             // 
             // menuStrip2
             // 
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gameRulesToolStripMenuItem,
-            this.levelsChooserToolStripMenuItem,
-            this.sTARTToolStripMenuItem});
+            this.sTARTToolStripMenuItem,
+            this.pauseToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(697, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(696, 24);
             this.menuStrip2.TabIndex = 35;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -317,34 +315,6 @@
             this.gameRulesToolStripMenuItem.Text = "Game Rules";
             this.gameRulesToolStripMenuItem.Click += new System.EventHandler(this.gameRulesToolStripMenuItem_Click);
             // 
-            // levelsChooserToolStripMenuItem
-            // 
-            this.levelsChooserToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.firstLvlToolStripMenuItem,
-            this.secondLvlToolStripMenuItem,
-            this.thirdLvlToolStripMenuItem});
-            this.levelsChooserToolStripMenuItem.Name = "levelsChooserToolStripMenuItem";
-            this.levelsChooserToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
-            this.levelsChooserToolStripMenuItem.Text = "Levels Chooser";
-            // 
-            // firstLvlToolStripMenuItem
-            // 
-            this.firstLvlToolStripMenuItem.Name = "firstLvlToolStripMenuItem";
-            this.firstLvlToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.firstLvlToolStripMenuItem.Text = "First lvl";
-            // 
-            // secondLvlToolStripMenuItem
-            // 
-            this.secondLvlToolStripMenuItem.Name = "secondLvlToolStripMenuItem";
-            this.secondLvlToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.secondLvlToolStripMenuItem.Text = "Second lvl";
-            // 
-            // thirdLvlToolStripMenuItem
-            // 
-            this.thirdLvlToolStripMenuItem.Name = "thirdLvlToolStripMenuItem";
-            this.thirdLvlToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.thirdLvlToolStripMenuItem.Text = "Third lvl";
-            // 
             // sTARTToolStripMenuItem
             // 
             this.sTARTToolStripMenuItem.BackColor = System.Drawing.Color.Green;
@@ -352,6 +322,13 @@
             this.sTARTToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.sTARTToolStripMenuItem.Text = "START";
             this.sTARTToolStripMenuItem.Click += new System.EventHandler(this.sTARTToolStripMenuItem_Click);
+            // 
+            // pauseToolStripMenuItem
+            // 
+            this.pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
+            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.pauseToolStripMenuItem.Text = "Pause";
+            this.pauseToolStripMenuItem.Click += new System.EventHandler(this.pauseToolStripMenuItem_Click);
             // 
             // pictureBox8
             // 
@@ -429,12 +406,13 @@
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 460);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 487);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(697, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(696, 22);
             this.statusStrip1.TabIndex = 49;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -467,7 +445,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(697, 482);
+            this.ClientSize = new System.Drawing.Size(696, 509);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pictureBox22);
             this.Controls.Add(this.pictureBox19);
@@ -552,10 +530,6 @@
         private System.Windows.Forms.PictureBox gameover;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem gameRulesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem levelsChooserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem firstLvlToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem secondLvlToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thirdLvlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sTARTToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox16;
@@ -567,5 +541,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ToolStripMenuItem pauseToolStripMenuItem;
     }
 }

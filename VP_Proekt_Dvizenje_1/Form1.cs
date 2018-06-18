@@ -22,7 +22,7 @@ namespace VP_Proekt_Dvizenje_1
         int force = 8;
        
 
-        public int score1 { get; set; }
+        public static int score1 { get; set; }
 
         int playSpeed = 8;
         int backLeft = 8;
@@ -202,6 +202,10 @@ namespace VP_Proekt_Dvizenje_1
             if (e.KeyCode == Keys.Space && !jump)
             {
                 jump = true;
+            }
+            if(e.KeyCode == Keys.P)
+            {
+                gameTimer.Stop();
             }
 
         }

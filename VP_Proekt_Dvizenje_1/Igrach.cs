@@ -14,6 +14,9 @@ namespace VP_Proekt_Dvizenje_1
         {
             return string.Format("{0}-{1}", Ime, Poeni);
         }
+
+
+      
     }
     
 }
