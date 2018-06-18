@@ -343,6 +343,16 @@ namespace VP_Proekt_Dvizenje_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap super_trajkoo {
+            get {
+                object obj = ResourceManager.GetObject("super_trajkoo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap victory {
             get {
                 object obj = ResourceManager.GetObject("victory", resourceCulture);

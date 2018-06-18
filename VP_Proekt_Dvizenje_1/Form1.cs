@@ -199,6 +199,10 @@ namespace VP_Proekt_Dvizenje_1
             {
                 gameTimer.Start();
             }
+            if (e.KeyCode == Keys.Space && !jump)
+            {
+                jump = true;
+            }
 
         }
 
@@ -243,6 +247,19 @@ namespace VP_Proekt_Dvizenje_1
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+            
+        }
+    
+        private void pauseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(pauseToolStripMenuItem.Selected)
+            {
+                gameTimer.Stop();
+             }
+        }
+
+        private void firstLvlToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
         }

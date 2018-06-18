@@ -56,15 +56,12 @@
             this.Background = new System.Windows.Forms.PictureBox();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.gameRulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.levelsChooserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.firstLvlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.secondLvlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thirdLvlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sTARTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.pauseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.victory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameover)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dragon)).BeginInit();
@@ -111,19 +108,21 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(29, 1);
+            this.progressBar1.Location = new System.Drawing.Point(44, 2);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar1.Maximum = 10;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(100, 23);
+            this.progressBar1.Size = new System.Drawing.Size(150, 35);
             this.progressBar1.TabIndex = 29;
             // 
             // victory
             // 
             this.victory.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.victory;
             this.victory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.victory.Location = new System.Drawing.Point(0, 30);
+            this.victory.Location = new System.Drawing.Point(0, 46);
+            this.victory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.victory.Name = "victory";
-            this.victory.Size = new System.Drawing.Size(697, 461);
+            this.victory.Size = new System.Drawing.Size(1046, 709);
             this.victory.TabIndex = 31;
             this.victory.TabStop = false;
             // 
@@ -131,9 +130,10 @@
             // 
             this.gameover.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.gameoverr;
             this.gameover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gameover.Location = new System.Drawing.Point(0, 30);
+            this.gameover.Location = new System.Drawing.Point(0, 46);
+            this.gameover.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gameover.Name = "gameover";
-            this.gameover.Size = new System.Drawing.Size(716, 489);
+            this.gameover.Size = new System.Drawing.Size(1074, 752);
             this.gameover.TabIndex = 30;
             this.gameover.TabStop = false;
             // 
@@ -142,9 +142,10 @@
             this.Dragon.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.dragon;
             this.Dragon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Dragon.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.dragon;
-            this.Dragon.Location = new System.Drawing.Point(678, 77);
+            this.Dragon.Location = new System.Drawing.Point(1017, 118);
+            this.Dragon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Dragon.Name = "Dragon";
-            this.Dragon.Size = new System.Drawing.Size(153, 164);
+            this.Dragon.Size = new System.Drawing.Size(230, 252);
             this.Dragon.TabIndex = 28;
             this.Dragon.TabStop = false;
             this.Dragon.Tag = "dragon";
@@ -154,9 +155,10 @@
             // 
             this.Girl.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.girlc;
             this.Girl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Girl.Location = new System.Drawing.Point(549, 77);
+            this.Girl.Location = new System.Drawing.Point(824, 118);
+            this.Girl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Girl.Name = "Girl";
-            this.Girl.Size = new System.Drawing.Size(61, 71);
+            this.Girl.Size = new System.Drawing.Size(92, 109);
             this.Girl.TabIndex = 27;
             this.Girl.TabStop = false;
             this.Girl.Tag = "girl";
@@ -165,9 +167,10 @@
             // 
             this.pictureBox3.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick2;
             this.pictureBox3.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick3;
-            this.pictureBox3.Location = new System.Drawing.Point(490, 144);
+            this.pictureBox3.Location = new System.Drawing.Point(735, 222);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(129, 51);
+            this.pictureBox3.Size = new System.Drawing.Size(194, 78);
             this.pictureBox3.TabIndex = 26;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "platform";
@@ -176,9 +179,10 @@
             // 
             this.pictureBox2.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
             this.pictureBox2.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.coin;
-            this.pictureBox2.Location = new System.Drawing.Point(1138, 342);
+            this.pictureBox2.Location = new System.Drawing.Point(1707, 526);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(76, 77);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
@@ -188,9 +192,10 @@
             // 
             this.pictureBox1.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick2;
             this.pictureBox1.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick3;
-            this.pictureBox1.Location = new System.Drawing.Point(1070, 401);
+            this.pictureBox1.Location = new System.Drawing.Point(1605, 617);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 51);
+            this.pictureBox1.Size = new System.Drawing.Size(194, 78);
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "platform";
@@ -199,9 +204,10 @@
             // 
             this.pictureBox9.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick2;
             this.pictureBox9.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick3;
-            this.pictureBox9.Location = new System.Drawing.Point(256, 227);
+            this.pictureBox9.Location = new System.Drawing.Point(384, 349);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(129, 51);
+            this.pictureBox9.Size = new System.Drawing.Size(194, 78);
             this.pictureBox9.TabIndex = 23;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Tag = "platform";
@@ -210,9 +216,10 @@
             // 
             this.pictureBox8.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick2;
             this.pictureBox8.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick3;
-            this.pictureBox8.Location = new System.Drawing.Point(895, 190);
+            this.pictureBox8.Location = new System.Drawing.Point(1342, 292);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(129, 51);
+            this.pictureBox8.Size = new System.Drawing.Size(194, 78);
             this.pictureBox8.TabIndex = 22;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Tag = "platform";
@@ -221,9 +228,10 @@
             // 
             this.pictureBox7.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick2;
             this.pictureBox7.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick3;
-            this.pictureBox7.Location = new System.Drawing.Point(549, 289);
+            this.pictureBox7.Location = new System.Drawing.Point(824, 445);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(129, 51);
+            this.pictureBox7.Size = new System.Drawing.Size(194, 78);
             this.pictureBox7.TabIndex = 21;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Tag = "platform";
@@ -232,9 +240,10 @@
             // 
             this.pictureBox6.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick2;
             this.pictureBox6.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick3;
-            this.pictureBox6.Location = new System.Drawing.Point(736, 401);
+            this.pictureBox6.Location = new System.Drawing.Point(1104, 617);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(129, 51);
+            this.pictureBox6.Size = new System.Drawing.Size(194, 78);
             this.pictureBox6.TabIndex = 20;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Tag = "platform";
@@ -243,7 +252,8 @@
             // 
             this.Key.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
             this.Key.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.key;
-            this.Key.Location = new System.Drawing.Point(76, 118);
+            this.Key.Location = new System.Drawing.Point(114, 182);
+            this.Key.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Key.Name = "Key";
             this.Key.Size = new System.Drawing.Size(90, 47);
             this.Key.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -255,9 +265,10 @@
             // 
             this.Coin2.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
             this.Coin2.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.coin;
-            this.Coin2.Location = new System.Drawing.Point(736, 275);
+            this.Coin2.Location = new System.Drawing.Point(1104, 423);
+            this.Coin2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Coin2.Name = "Coin2";
-            this.Coin2.Size = new System.Drawing.Size(51, 50);
+            this.Coin2.Size = new System.Drawing.Size(76, 77);
             this.Coin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Coin2.TabIndex = 18;
             this.Coin2.TabStop = false;
@@ -267,9 +278,10 @@
             // 
             this.Coin1.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.background;
             this.Coin1.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.coin;
-            this.Coin1.Location = new System.Drawing.Point(246, 162);
+            this.Coin1.Location = new System.Drawing.Point(369, 249);
+            this.Coin1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Coin1.Name = "Coin1";
-            this.Coin1.Size = new System.Drawing.Size(51, 50);
+            this.Coin1.Size = new System.Drawing.Size(76, 77);
             this.Coin1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Coin1.TabIndex = 15;
             this.Coin1.TabStop = false;
@@ -279,7 +291,8 @@
             // 
             this.Door.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.door_closed;
             this.Door.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.door_closed;
-            this.Door.Location = new System.Drawing.Point(964, 105);
+            this.Door.Location = new System.Drawing.Point(1446, 162);
+            this.Door.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Door.Name = "Door";
             this.Door.Size = new System.Drawing.Size(60, 90);
             this.Door.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -291,9 +304,10 @@
             // 
             this.pictureBox4.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick2;
             this.pictureBox4.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick3;
-            this.pictureBox4.Location = new System.Drawing.Point(76, 171);
+            this.pictureBox4.Location = new System.Drawing.Point(114, 263);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(129, 51);
+            this.pictureBox4.Size = new System.Drawing.Size(194, 78);
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "platform";
@@ -302,9 +316,10 @@
             // 
             this.Platform.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick;
             this.Platform.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.pinkbrick1;
-            this.Platform.Location = new System.Drawing.Point(-2, 402);
+            this.Platform.Location = new System.Drawing.Point(-3, 618);
+            this.Platform.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Platform.Name = "Platform";
-            this.Platform.Size = new System.Drawing.Size(555, 50);
+            this.Platform.Size = new System.Drawing.Size(832, 77);
             this.Platform.TabIndex = 10;
             this.Platform.TabStop = false;
             this.Platform.Tag = "platform";
@@ -314,7 +329,8 @@
             this.Player.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.player1;
             this.Player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Player.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.player;
-            this.Player.Location = new System.Drawing.Point(76, 342);
+            this.Player.Location = new System.Drawing.Point(114, 526);
+            this.Player.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Player.Name = "Player";
             this.Player.Size = new System.Drawing.Size(50, 60);
             this.Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -326,105 +342,90 @@
             this.Background.BackgroundImage = global::VP_Proekt_Dvizenje_1.Properties.Resources.hearts;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Background.Image = global::VP_Proekt_Dvizenje_1.Properties.Resources.hearts;
-            this.Background.Location = new System.Drawing.Point(-61, 30);
+            this.Background.Location = new System.Drawing.Point(-92, 46);
+            this.Background.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Background.Name = "Background";
-            this.Background.Size = new System.Drawing.Size(2000, 476);
+            this.Background.Size = new System.Drawing.Size(3000, 732);
             this.Background.TabIndex = 1;
             this.Background.TabStop = false;
             this.Background.Click += new System.EventHandler(this.Background_Click);
             // 
             // menuStrip2
             // 
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gameRulesToolStripMenuItem,
-            this.levelsChooserToolStripMenuItem,
-            this.sTARTToolStripMenuItem});
+            this.sTARTToolStripMenuItem,
+            this.pauseToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(695, 24);
+            this.menuStrip2.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip2.Size = new System.Drawing.Size(1042, 35);
             this.menuStrip2.TabIndex = 36;
             this.menuStrip2.Text = "menuStrip2";
             // 
             // gameRulesToolStripMenuItem
             // 
             this.gameRulesToolStripMenuItem.Name = "gameRulesToolStripMenuItem";
-            this.gameRulesToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.gameRulesToolStripMenuItem.Size = new System.Drawing.Size(117, 29);
             this.gameRulesToolStripMenuItem.Text = "Game Rules";
             this.gameRulesToolStripMenuItem.Click += new System.EventHandler(this.gameRulesToolStripMenuItem_Click);
-            // 
-            // levelsChooserToolStripMenuItem
-            // 
-            this.levelsChooserToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.firstLvlToolStripMenuItem,
-            this.secondLvlToolStripMenuItem,
-            this.thirdLvlToolStripMenuItem});
-            this.levelsChooserToolStripMenuItem.Name = "levelsChooserToolStripMenuItem";
-            this.levelsChooserToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
-            this.levelsChooserToolStripMenuItem.Text = "Levels Chooser";
-            // 
-            // firstLvlToolStripMenuItem
-            // 
-            this.firstLvlToolStripMenuItem.Name = "firstLvlToolStripMenuItem";
-            this.firstLvlToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.firstLvlToolStripMenuItem.Text = "First lvl";
-            // 
-            // secondLvlToolStripMenuItem
-            // 
-            this.secondLvlToolStripMenuItem.Name = "secondLvlToolStripMenuItem";
-            this.secondLvlToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.secondLvlToolStripMenuItem.Text = "Second lvl";
-            // 
-            // thirdLvlToolStripMenuItem
-            // 
-            this.thirdLvlToolStripMenuItem.Name = "thirdLvlToolStripMenuItem";
-            this.thirdLvlToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.thirdLvlToolStripMenuItem.Text = "Third lvl";
             // 
             // sTARTToolStripMenuItem
             // 
             this.sTARTToolStripMenuItem.BackColor = System.Drawing.Color.Green;
             this.sTARTToolStripMenuItem.Name = "sTARTToolStripMenuItem";
-            this.sTARTToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.sTARTToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
             this.sTARTToolStripMenuItem.Text = "START";
             this.sTARTToolStripMenuItem.Click += new System.EventHandler(this.sTARTToolStripMenuItem_Click);
             // 
             // progressBar2
             // 
             this.progressBar2.Enabled = false;
-            this.progressBar2.Location = new System.Drawing.Point(549, 1);
+            this.progressBar2.Location = new System.Drawing.Point(824, 2);
+            this.progressBar2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBar2.Maximum = 10;
             this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(100, 23);
+            this.progressBar2.Size = new System.Drawing.Size(150, 35);
             this.progressBar2.TabIndex = 37;
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 433);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 670);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(695, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1042, 30);
             this.statusStrip1.TabIndex = 38;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(179, 25);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(179, 25);
             this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            // 
+            // pauseToolStripMenuItem
+            // 
+            this.pauseToolStripMenuItem.Name = "pauseToolStripMenuItem";
+            this.pauseToolStripMenuItem.Size = new System.Drawing.Size(69, 29);
+            this.pauseToolStripMenuItem.Text = "Pause";
+            this.pauseToolStripMenuItem.Click += new System.EventHandler(this.pauseToolStripMenuItem_Click);
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(695, 455);
+            this.ClientSize = new System.Drawing.Size(1042, 700);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.menuStrip2);
@@ -448,6 +449,7 @@
             this.Controls.Add(this.Platform);
             this.Controls.Add(this.Player);
             this.Controls.Add(this.Background);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
@@ -510,14 +512,11 @@
         private System.Windows.Forms.PictureBox victory;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem gameRulesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem levelsChooserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem firstLvlToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem secondLvlToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thirdLvlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sTARTToolStripMenuItem;
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripMenuItem pauseToolStripMenuItem;
     }
 }

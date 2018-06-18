@@ -239,6 +239,16 @@ namespace VP_Proekt_Dvizenje_1
             {
                 jump = true;
             }
+            if (e.KeyCode == Keys.S)
+            {
+                gameTimer.Start();
+                timer1.Enabled = true;
+                progressBar2.Enabled = true;
+            }
+            if(e.KeyCode == Keys.Space && !jump)
+            {
+                jump = true;
+            }
         }
 
         private void Form3_KeyUp_1(object sender, KeyEventArgs e)
@@ -356,6 +366,14 @@ namespace VP_Proekt_Dvizenje_1
 
             Form4 form4 = new Form4();
             form4.Show();
+        }
+
+        private void pauseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (pauseToolStripMenuItem.Selected)
+            {
+                gameTimer.Stop();
+            }
         }
     }
 }

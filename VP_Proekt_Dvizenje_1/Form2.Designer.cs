@@ -306,7 +306,7 @@
             this.sTARTToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(670, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(697, 24);
             this.menuStrip2.TabIndex = 35;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -432,9 +432,9 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 480);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 460);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(670, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(697, 22);
             this.statusStrip1.TabIndex = 49;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -467,7 +467,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(670, 502);
+            this.ClientSize = new System.Drawing.Size(697, 482);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pictureBox22);
             this.Controls.Add(this.pictureBox19);
